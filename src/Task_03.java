@@ -11,10 +11,11 @@ public class Task_03 {
         double rubCourse = scanner.nextDouble();
         System.out.print("Введите количество рублей: ");
         double rubCount = scanner.nextDouble();
-        System.out.println("Вы можете купить "+ convert(rubCourse,rubCount)+" $");
+        System.out.print("Результа: ");
+        System.out.printf("%.2f",convert(rubCourse,rubCount));
     }
 
-    static double convert(double rubCourse, double count){
-        return count/rubCourse;
+    static double convert(double rubCourse, double rubCount){
+        return rubCount/rubCourse;
     }
 }
